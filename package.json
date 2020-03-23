@@ -1,0 +1,23 @@
+{
+  "name": "mails",
+  "version": "1.0.0",
+  "description": "Serveur mail",
+  "main": "serveur.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss resources/scss/style.scss public/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Guillaume",
+  "license": "ISC",
+  "dependencies": {
+    "custom-env": "^1.0.2",
+    "email-templates": "^7.0.4",
+    "handlebars": "^4.7.3",
+    "nodemailer": "^6.4.6",
+    "nodemailer-smtp-transport": "^2.7.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2"
+  }
+}
